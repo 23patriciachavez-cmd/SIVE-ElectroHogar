@@ -1,0 +1,90 @@
+
+/* Estilos generales de SIVE-ElectroHogar */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fa;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* Encabezado principal */
+
+header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* Contenido */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #17365d;
+    margin-top: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Botón */
+
+button {
+    background-color: #1673c9;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #105a9e;
+}
+
+/* Mensaje de JavaScript */
+
+#mensaje {
+    font-weight: bold;
+    color: #1673c9;
+    margin-top: 15px;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
