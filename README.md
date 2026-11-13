@@ -1,10 +1,19 @@
-Universidad Don Bosco · Análisis y Diseño de Sistemas Informáticos (ADS)
-Proyecto académico (Fase 2) - Sistema Integral de Inventario y Ventas de Electrodomésticos
+Universidad Don Bosco - Análisis y Diseño de Sistemas Informáticos (ADS)
 
-ElectroHogar es una empresa ficticia y los registros son de demostración. 
-No es un sistema comercial ni una solución lista para producción.
 
-Contenido
+Proyecto académico (Fase 2)
+Sistema Integral de Inventario y Ventas de Electrodomésticos
+
+## Integrantes:
+
+CASTRO FUNES	JOSÉ MARÍA	CF041138
+
+CHÁVEZ MOLINA	PATRICIA MARIBEL	CM152479
+
+ORELLANA GUZMAN	KARLA BEATRIZ	OG253196
+
+
+## Contenido
 
 1. [Descripción general](#descripción-general)
 2. [Problema y justificación](#problema-y-justificación)
