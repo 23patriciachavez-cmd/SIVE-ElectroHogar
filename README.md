@@ -1,13 +1,10 @@
-# SIVE – ElectroHogar
+Universidad Don Bosco · Análisis y Diseño de Sistemas Informáticos (ADS)
+Proyecto académico (Fase 2) - Sistema Integral de Inventario y Ventas de Electrodomésticos
 
-### Sistema Integral de Inventario y Ventas de Electrodomésticos
+ElectroHogar es una empresa ficticia y los registros son de demostración. 
+No es un sistema comercial ni una solución lista para producción.
 
-**Universidad Don Bosco · Análisis y Diseño de Sistemas Informáticos (ADS)**  
-**Proyecto académico · Segundo avance (Fase 2) · Prototipo demostrativo**
-
-> **Aviso:** ElectroHogar es una empresa ficticia y los registros utilizados son de demostración. El prototipo no es un sistema comercial ni una solución lista para producción.
-
-## Contenido
+Contenido
 
 1. [Descripción general](#descripción-general)
 2. [Problema y justificación](#problema-y-justificación)
@@ -21,15 +18,14 @@
 10. [Casos de uso](#casos-de-uso)
 11. [Evidencias de interfaz](#evidencias-de-interfaz)
 12. [Pruebas funcionales sugeridas](#pruebas-funcionales-sugeridas)
-13. [Criterios de evaluación](#criterios-de-evaluación)
-14. [Limitaciones y mejoras futuras](#limitaciones-y-mejoras-futuras)
-15. [Equipo y referencias](#equipo-y-referencias)
+
 
 ## Descripción general
 
-**SIVE–ElectroHogar** es una propuesta académica de sistema web para apoyar la gestión de **productos, inventario, ventas y reportes** en *ElectroHogar*, una pequeña empresa ficticia dedicada a comercializar refrigeradoras, cocinas, lavadoras, televisores, microondas y otros electrodomésticos.
+**SIVE–ElectroHogar** es nuestra propuesta académica de sistema web para apoyar la gestión de **productos, inventario, ventas y reportes** en *ElectroHogar*, una empresa ficticia dedicada a comercializar refrigeradoras, cocinas, lavadoras, televisores, microondas y otros electrodomésticos.
 
-El proyecto combina el **análisis y diseño de un sistema de información** con un **prototipo web funcional inicial**. La Fase 2 se concentra en las operaciones esenciales y sus validaciones, dejando otras funcionalidades previstas para desarrollos posteriores.
+El proyecto combina el **análisis y diseño de un sistema de información** con un **prototipo web funcional inicial**. 
+La Fase 2 se concentra en las operaciones esenciales y sus validaciones, dejando otras funcionalidades previstas para desarrollos posteriores.
 
 ## Problema y justificación
 
@@ -37,7 +33,7 @@ Como escenario de estudio, se plantea que la empresa utiliza registros manuales 
 
 SIVE propone centralizar la consulta de productos, controlar entradas y salidas, validar las cantidades antes de vender y presentar indicadores básicos. El análisis y sus diagramas permiten comprobar la relación entre requerimientos, procesos, datos e interfaces antes de una implementación completa.
 
-**Aclaración metodológica:** los procesos y necesidades empresariales corresponden a un escenario académico propuesto; no se presentan como resultados de entrevistas o pruebas de campo verificadas.
+Los procesos y necesidades empresariales corresponden a un escenario académico propuesto; no se presentan como resultados de entrevistas o pruebas de campo verificadas.
 
 ## Objetivos
 
@@ -51,7 +47,8 @@ SIVE propone centralizar la consulta de productos, controlar entradas y salidas,
 
 ## Alcance y estado del proyecto
 
-La primera etapa contempló funciones de usuarios, catálogos, proveedores, clientes, compras, inventario, ventas y reportes. El segundo avance prioriza los siguientes componentes:
+La primera etapa contine funciones de usuarios, catálogos, proveedores, clientes, compras, inventario, ventas y reportes. 
+El segundo avance prioriza los siguientes componentes:
 
 | Área | Estado en el prototipo web | Descripción |
 | --- | --- | --- |
@@ -63,8 +60,6 @@ La primera etapa contempló funciones de usuarios, catálogos, proveedores, clie
 | Autenticación y permisos | Pendiente | No existe control de acceso real por roles. |
 | Proveedores, compras y clientes | Pendiente | Forman parte del alcance general, no de la demo actual. |
 | Base de datos relacional integrada | Pendiente | El modelo SQLite es una evidencia separada y no se conecta al sitio web. |
-
-**El porcentaje de avance exigido en la rúbrica (50 %) es un criterio de evaluación, no un porcentaje de cumplimiento técnico verificado.** Su acreditación depende de la revisión del docente.
 
 ## Módulos y funcionamiento
 
@@ -108,7 +103,7 @@ Se consideran también los siguientes atributos no funcionales para la solución
 | CSS3 | Diseño visual y presentación adaptable. |
 | JavaScript | Eventos, cálculos, validaciones y actualización de vistas. |
 | `localStorage` | Persistencia local de datos de demostración en el navegador. |
-| SQLite | Modelo relacional propuesto y conjunto independiente de datos de prueba (según documentación de Fase 2). |
+| SQLite | Modelo relacional propuesto y conjunto independiente de datos de prueba. |
 | Git / GitHub | Control de versiones y colaboración del equipo. |
 
 **Arquitectura de la demostración:** navegador → interfaz HTML/CSS/JavaScript → reglas de validación → `localStorage`.
@@ -152,7 +147,7 @@ Luego abrir `index.html` en el navegador.
 
 ## Modelo de datos y documentación de análisis
 
-La documentación del segundo avance plantea un **modelo relacional con seis entidades**:
+En la documentación planteamos un modelo relacional con seis entidades:
 
 | Entidad | Propósito |
 | --- | --- |
@@ -163,9 +158,10 @@ La documentación del segundo avance plantea un **modelo relacional con seis ent
 | `detalle_venta` | Productos, cantidades y subtotales por venta. |
 | `movimiento` | Registro de variaciones de inventario. |
 
-El informe de Fase 2 describe un **script `base_datos_sive.sql`** y una base **`sive_ejemplo.db`** con **60 productos sintéticos, 6 categorías y 2 usuarios de ejemplo**. Estos elementos pertenecen al paquete de documentación académica; **no se afirma que estén incluidos actualmente en este repositorio**.
+Describimos un **script `base_datos_sive.sql`** y una base **`sive_ejemplo.db`** con **60 productos sintéticos, 6 categorías y 2 usuarios de ejemplo**. 
+Estos elementos pertenecen al paquete de documentación; **no se afirma que estén incluidos actualmente en este repositorio**.
 
-Para verificar la cantidad de productos si se dispone de la base SQLite:
+Para verificar la cantidad de productos disponemos de la base SQLite:
 
 ```sql
 SELECT COUNT(*) FROM producto;
@@ -188,7 +184,6 @@ Los actores representan responsabilidades **conceptuales**, no perfiles de acces
 
 ## Evidencias de interfaz
 
-La rúbrica solicita **una imagen de cada pantalla utilizada durante los casos de uso** y que la interfaz muestre los controles y resultados visibles en la interacción. Para documentarlas, se proponen los archivos siguientes:
 
 | Pantalla | Evidencia recomendada | Estado |
 | --- | --- | --- |
@@ -198,17 +193,11 @@ La rúbrica solicita **una imagen de cada pantalla utilizada durante los casos d
 | Inventario | Formulario e historial de movimientos | Captura por incorporar. |
 | Reportes | Totales y alertas por stock bajo | Captura por incorporar. |
 
-**Ruta sugerida para las capturas:** `docs/capturas/`. Una vez incorporadas al repositorio, se pueden enlazar en esta sección, por ejemplo:
 
-```markdown
-![Panel de control](docs/capturas/01-inicio.png)
-```
+## Pruebas funcionales
 
-No se incluyen imágenes inventadas ni se presentan capturas pendientes como evidencias completadas.
-
-## Pruebas funcionales sugeridas
-
-Los siguientes casos están definidos en el documento académico como **pruebas previstas**. Ejecutarlos y adjuntar evidencia antes de declararlos aprobados.
+Los siguientes casos están definidos en el documento académico como **pruebas previstas**. 
+Vamos a ejecutarlas y adjuntar evidencia.
 
 | ID | Acción | Resultado esperado |
 | --- | --- | --- |
@@ -221,80 +210,6 @@ Los siguientes casos están definidos en el documento académico como **pruebas 
 | T07 | Consultar reportes | Se muestran indicadores y alertas. |
 | T08 | Restablecer la demostración | Se recuperan los productos de muestra. |
 
-## Criterios de evaluación
 
-La evaluación de la Fase 2 se divide en **tres componentes**:
+La Fase 3 continuara con el desarollo de este proyecto...
 
-| Componente | Peso en la evaluación |
-| --- | ---: |
-| Sistema / software | **50 %** |
-| Defensa del proyecto | **20 %** |
-| Documento del segundo avance | **30 %** |
-| **Total** | **100 %** |
-
-### A. Sistema (50 %)
-
-La rúbrica del sistema distribuye su propia puntuación así:
-
-| Criterio | Peso dentro del sistema |
-| --- | ---: |
-| Correspondencia entre interfaces, análisis y modelado | 10 % |
-| Imagen de cada pantalla que interviene en casos de uso | 20 % |
-| Interfaz muestra lo visible durante la interacción | 5 % |
-| Restricciones de seguridad, calidad y manejo de errores | 20 % |
-| Cumplimiento de requisitos y operación sin fallos | 35 % |
-| Presentación de un avance del 50 % | 10 % |
-| **Total** | **100 %** |
-
-### B. Defensa del proyecto (20 %)
-
-La defensa contempla **postura y contacto visual**, **claridad y dominio del contenido**, **comprensión y capacidad para responder preguntas**, y **presentación personal formal**. La escala presentada por la rúbrica es: excelente (9–10), muy bueno (7–8), bueno (5–6) y deficiente (0–4).
-
-### C. Documento del segundo avance (30 %)
-
-La rúbrica del documento exige presentación formal y contenido ordenado. Sus criterios y pesos internos son:
-
-| Criterio | Peso dentro del documento |
-| --- | ---: |
-| Formato del documento: fuente, títulos, interlineado, encabezado, portada e índice | 5 % |
-| Organización secuencial de conceptos | 5 % |
-| Modelo E-R y relacional completo | 10 % |
-| Al menos 50 registros de prueba | 5 % |
-| Actores adecuados en diagramas de casos de uso | 5 % |
-| Casos de uso expresados con verbos en infinitivo | 5 % |
-| Uso justificado de relaciones `include` y `extend` | 5 % |
-| Orden y ortografía de diagramas | 5 % |
-| Narrativa detallada de escenarios por caso de uso | 15 % |
-| Diseños de interfaces con una imagen por pantalla de los casos de uso | 30 % |
-| Calidad general de presentación y redacción | 5 % |
-| Referencias en formato APA | 5 % |
-| **Total** | **100 %** |
-
-**Importante:** esta tabla describe criterios de evaluación; **no acredita su cumplimiento automáticamente**. En particular, las capturas y las pruebas deben documentarse, y la implementación de autenticación, búsqueda, roles y otras funciones pendientes no debe presentarse como terminada.
-
-## Limitaciones y mejoras futuras
-
-- El sitio es una **demo local**: los datos se guardan únicamente en el navegador utilizado.
-- No dispone de backend, autenticación segura, roles reales ni auditoría completa.
-- La base SQLite del informe es **independiente**, sin integración con `localStorage`.
-- No contempla concurrencia multiusuario ni transacciones de base de datos.
-- No incluye aún gestión completa de compras, proveedores o clientes.
-- Se prevé ampliar las operaciones de productos, comprobantes, búsqueda y reportes.
-- Para un sistema real se requieren validación de servidor, permisos, protección de credenciales, respaldo de datos y pruebas con usuarios.
-
-## Equipo y referencias
-
-**Equipo de proyecto (ADS):** Gabriel, José, Karla, Tania y Patricia.  
-**Rol documentado:** José — Analista Consultor (AC). Los demás cargos deben confirmarse antes de publicarlos como asignaciones definitivas.
-
-**Referencias de apoyo utilizadas en el informe académico:**
-
-- Object Management Group (2017). *OMG Unified Modeling Language (UML), Version 2.5.1*. https://www.omg.org/spec/UML/2.5.1
-- SQLite. *SQLite Documentation*. https://www.sqlite.org/docs.html
-- MDN Web Docs. *HTML*. https://developer.mozilla.org/es/docs/Web/HTML
-- MDN Web Docs. *JavaScript*. https://developer.mozilla.org/es/docs/Web/JavaScript
-- MDN Web Docs. *Window: localStorage*. https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-
----
-
-**Estado del repositorio:** prototipo académico en desarrollo, correspondiente al segundo avance del proyecto SIVE–ElectroHogar.
