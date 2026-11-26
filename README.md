@@ -351,6 +351,15 @@ El proyecto contempla la organización del trabajo mediante Scrum y el uso de Tr
 
 **Tablero Trello:** [SIVE – ElectroHogar | Fase III](https://trello.com/b/16QN89eT/sive-electrohogar-fase-iii)
 
+### Burndown Chart
+
+Representación retrospectiva del avance del proyecto durante
+los cuatro Sprints, considerando un total de 78 Story Points.
+
+![Burndown Chart](diagramas/Burndown_Chart_SIVE.png)
+
+*Figura. Burndown Chart del proyecto SIVE – ElectroHogar.
+Fuente: elaboración propia.*
 Git y GitHub permiten mantener el historial de cambios y facilitar la integración del trabajo colaborativo mediante ramas, commits y Pull Requests.
 
 - [Repositorio grupal](https://github.com/23patriciachavez-cmd/SIVE-ElectroHogar)
@@ -359,6 +368,14 @@ Git y GitHub permiten mantener el historial de cambios y facilitar la integraci�
 La integración de los cambios al repositorio grupal se realizará mediante un Pull Request revisado por el equipo. No se da por completada hasta que se haya efectuado la integración.
 
 ## Limitaciones y mejoras futuras
+
+Representación retrospectiva del avance del proyecto durante
+los cuatro Sprints, considerando un total de 78 Story Points.
+
+![Burndown Chart](diagramas/Burndown_Chart_SIVE.png)
+
+*Figura. Burndown Chart del proyecto SIVE – ElectroHogar.
+Fuente: elaboración propia.*
 
 - Integrar un servidor de aplicaciones y una base de datos relacional como SQLite.
 - Implementar autenticación de servidor con almacenamiento seguro de contraseñas, sesiones y autorización en cada operación. SHA-256 por sí solo y localStorage no son adecuados para producción.
