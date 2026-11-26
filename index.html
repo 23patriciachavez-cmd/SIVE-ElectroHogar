@@ -1,16 +1,255 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIVE - ElectroHogar</title>
-  <meta http-equiv="refresh" content="0; url=./SIVE_demo_ordenado.html">
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Sistema de Inventario y Ventas de ElectroHogar">
+
+    <title>SIVE | ElectroHogar</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
 </head>
+
 <body>
-  <p>Abriendo SIVE-ElectroHogar...</p>
-  <a href="./SIVE_demo_ordenado.html">
-    Entrar al sistema
-  </a>
+
+    <!-- =====================================
+         PANTALLA DE INICIO DE SESION
+    ====================================== -->
+
+    <section id="login" class="login-container">
+
+        <div class="login-card">
+
+            <div class="login-logo">
+                <span>SIVE</span>
+                <h2>ElectroHogar</h2>
+            </div>
+
+            <p class="login-descripcion">
+                Sistema de Inventario y Ventas
+            </p>
+
+            <h2>Iniciar sesión</h2>
+
+            <form id="formLogin">
+
+                <div class="campo">
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        id="correo"
+                        name="correo"
+                        type="email"
+                        placeholder="Ingrese su correo"
+                        autocomplete="username"
+                        required>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="clave">
+                        Contraseña
+                    </label>
+
+                    <input
+                        id="clave"
+                        name="clave"
+                        type="password"
+                        placeholder="Ingrese su contraseña"
+                        autocomplete="current-password"
+                        required>
+
+                </div>
+
+                <button type="submit" class="btn-login">
+                    Iniciar sesión
+                </button>
+
+            </form>
+
+            <p class="login-footer">
+                SIVE ElectroHogar | Versión 3.0
+            </p>
+
+        </div>
+
+    </section>
+
+    
+         INTERFAZ PRINCIPAL DEL SISTEMA
+  
+
+    <div id="aplicacion" class="aplicacion" hidden>
+
+        <!-- ENCABEZADO -->
+
+        <header class="encabezado">
+
+            <div class="marca">
+
+                <span class="marca-logo">SIVE</span>
+
+                <div>
+                    <h2>ElectroHogar</h2>
+                    <small>Sistema de Inventario y Ventas</small>
+                </div>
+
+            </div>
+
+            <div class="usuario-info">
+
+                <div class="usuario-datos">
+
+                    <strong id="nombreUsuario"></strong>
+
+                    <span id="rolUsuario"></span>
+
+                </div>
+
+                <button id="btnCerrarSesion"
+                    class="btn-cerrar"
+                    type="button">
+
+                    Cerrar sesión
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENEDOR PRINCIPAL -->
+
+        <div class="estructura">
+
+            <!-- MENU LATERAL -->
+
+            <aside class="sidebar">
+
+                <nav class="menu"
+                    aria-label="Menú principal">
+
+                    <p class="menu-titulo">MENÚ PRINCIPAL</p>
+
+                    <button type="button"
+                        data-modulo="inicio">
+
+                        Inicio
+
+                    </button>
+
+                    <p class="menu-titulo">GESTIÓN COMERCIAL</p>
+
+                    <button type="button"
+                        data-modulo="productos">
+
+                        Productos
+
+                    </button>
+
+                    <button type="button"
+                        data-modulo="consulta-productos">
+
+                        Consulta de productos
+
+                    </button>
+
+                    <button type="button"
+                        data-modulo="inventario">
+
+                        Inventario
+
+                    </button>
+
+                    <button type="button"
+                        data-modulo="ventas">
+
+                        Ventas
+
+                    </button>
+
+                    <button type="button"
+                        data-modulo="compras">
+
+                        Compras
+
+                    </button>
+
+                    <button type="button"
+                        data-modulo="clientes">
+
+                        Clientes
+
+                    </button>
+
+                    <button type="button"
+                        data-modulo="proveedores">
+
+                        Proveedores
+
+                    </button>
+
+                    <p class="menu-titulo">ADMINISTRACIÓN</p>
+
+                    <button type="button"
+                        data-modulo="reportes">
+
+                        Reportes
+
+                    </button>
+
+                    <button type="button"
+                        data-modulo="usuarios">
+
+                        Usuarios
+
+                    </button>
+
+                </nav>
+
+                <div class="sidebar-footer">
+                    SIVE | Versión 3.0
+                </div>
+
+            </aside>
+
+            <!-- CONTENIDO DINAMICO -->
+
+            <main id="contenido" class="contenido">
+
+                <!-- Los módulos se generan desde JavaScript -->
+
+            </main>
+
+        </div>
+
+        <!-- PIE DE PAGINA -->
+
+        <footer class="footer">
+
+            <p>
+                © 2026 SIVE ElectroHogar |
+                Sistema de Inventario y Ventas
+            </p>
+
+        </footer>
+
+    </div>
+
+    <!-- CONEXION CON JAVASCRIPT -->
+
+    <script type="module" src="js/app.js"></script>
+
 </body>
+
 </html>
